@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>救生員題庫測驗</title>
+  <meta name="description" content="救生員資格檢定學科題庫靜態測驗網站，可部署到 GitHub Pages。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">112 年度救生員資格檢定</p>
+      <h1>救生員題庫測驗</h1>
+      <p class="subtitle">隨機出題、提交計分、錯題複習，全部在瀏覽器內完成。</p>
+      <nav class="tabs" aria-label="主要功能">
+        <button class="tab is-active" type="button" data-view="quiz">測驗</button>
+        <button class="tab" type="button" data-view="all">全部題目</button>
+        <button class="tab" type="button" data-view="wrong">錯題複習</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <span>靜態網站版本｜可直接放到 GitHub Pages，不需要伺服器或資料庫。</span>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
