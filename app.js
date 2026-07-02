@@ -13,7 +13,7 @@
     submitted: false,
     message: '',
     config: {
-      count: '25',
+      count: '50',
       chapter: 'all',
       type: 'mixed'
     },
@@ -78,7 +78,7 @@
 
   function sampleQuestions(pool, count, type) {
     if (count === 'all') return shuffle(pool);
-    const n = Math.max(1, Number.parseInt(count, 10) || 25);
+    const n = Math.max(1, Number.parseInt(count, 10) || 50);
     const all = shuffle(pool);
 
     if (type !== 'mixed') {
