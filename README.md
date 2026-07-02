@@ -4,7 +4,7 @@
 
 ## 功能
 
-- 隨機出題，預設 25 題
+- 隨機出題，預設 50 題
 - 可選題數、章節、題型
 - 支援是非題與選擇題
 - 提交後顯示分數與正確答案
@@ -19,17 +19,9 @@
 - `questions.js`：題庫資料
 - `.nojekyll`：讓 GitHub Pages 直接發布靜態檔案
 
-## 放到 GitHub Pages
-
-1. 建立一個新的 GitHub repository。
-2. 把這個資料夾裡的所有檔案上傳到 repository 根目錄。
-3. 到 repository 的 `Settings` → `Pages`。
-4. `Source` 選 `Deploy from a branch`。
-5. Branch 選 `main`，資料夾選 `/ (root)`，然後按 `Save`。
-6. 等待部署完成後，網址通常會是：`https://你的帳號.github.io/repository名稱/`。
-
 ## 更新題庫
 
+現在資料為 2026下載
 若要換成新版題庫，更新 `questions.js` 內的 `window.QUESTION_BANK` 陣列即可。每題格式如下：
 
 ```js
